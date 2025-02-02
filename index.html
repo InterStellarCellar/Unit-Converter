@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Unit Converter</h1>
+
+        <!-- Length Conversion -->
+        <div class="converter">
+            <h2>Length</h2>
+            <label for="length-from">From</label>
+            <input type="number" id="length-from" placeholder="Enter value" oninput="convertLength()">
+            <select id="length-unit-from" onchange="convertLength()">
+                <option value="meters">Meters</option>
+                <option value="kilometers">Kilometers</option>
+                <option value="miles">Miles</option>
+                <option value="inches">Inches</option>
+            </select>
+
+            <label for="length-to">To</label>
+            <input type="text" id="length-to" disabled>
+
+            <select id="length-unit-to" onchange="convertLength()">
+                <option value="meters">Meters</option>
+                <option value="kilometers">Kilometers</option>
+                <option value="miles">Miles</option>
+                <option value="inches">Inches</option>
+            </select>
+        </div>
+
+        <!-- Weight Conversion -->
+        <div class="converter">
+            <h2>Weight</h2>
+            <label for="weight-from">From</label>
+            <input type="number" id="weight-from" placeholder="Enter value" oninput="convertWeight()">
+            <select id="weight-unit-from" onchange="convertWeight()">
+                <option value="kg">Kilograms</option>
+                <option value="lbs">Pounds</option>
+                <option value="g">Grams</option>
+            </select>
+
+            <label for="weight-to">To</label>
+            <input type="text" id="weight-to" disabled>
+
+            <select id="weight-unit-to" onchange="convertWeight()">
+                <option value="kg">Kilograms</option>
+                <option value="lbs">Pounds</option>
+                <option value="g">Grams</option>
+            </select>
+        </div>
+
+        <!-- Temperature Conversion -->
+        <div class="converter">
+            <h2>Temperature</h2>
+            <label for="temp-from">From</label>
+            <input type="number" id="temp-from" placeholder="Enter value" oninput="convertTemperature()">
+            <select id="temp-unit-from" onchange="convertTemperature()">
+                <option value="C">Celsius</option>
+                <option value="F">Fahrenheit</option>
+                <option value="K">Kelvin</option>
+            </select>
+
+            <label for="temp-to">To</label>
+            <input type="text" id="temp-to" disabled>
+
+            <select id="temp-unit-to" onchange="convertTemperature()">
+                <option value="C">Celsius</option>
+                <option value="F">Fahrenheit</option>
+                <option value="K">Kelvin</option>
+            </select>
+        </div>
+
+        <!-- Volume Conversion -->
+        <div class="converter">
+            <h2>Volume</h2>
+            <label for="volume-from">From</label>
+            <input type="number" id="volume-from" placeholder="Enter value" oninput="convertVolume()">
+            <select id="volume-unit-from" onchange="convertVolume()">
+                <option value="liters">Liters</option>
+                <option value="gallons">Gallons</option>
+                <option value="milliliters">Milliliters</option>
+                <option value="cups">Cups</option>
+            </select>
+
+            <label for="volume-to">To</label>
+            <input type="text" id="volume-to" disabled>
+
+            <select id="volume-unit-to" onchange="convertVolume()">
+                <option value="liters">Liters</option>
+                <option value="gallons">Gallons</option>
+                <option value="milliliters">Milliliters</option>
+                <option value="cups">Cups</option>
+            </select>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
